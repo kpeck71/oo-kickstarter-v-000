@@ -1,2 +1,5 @@
-class Backers
+class Backer
+
+  def initialize
+    
 end
