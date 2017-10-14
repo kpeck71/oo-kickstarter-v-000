@@ -5,5 +5,6 @@ class Backer
     @backed_projects = []
   end
 
-  def add_project
+  def project=(project)
+    category.add_story(self) unless category.stories.include?(self)
 end
