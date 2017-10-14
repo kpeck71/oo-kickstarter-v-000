@@ -7,5 +7,5 @@ class Backer
 
   def project=(project)
     @project = project
-    category.add_story(self) unless category.stories.include?(self)
+    project.add_story(self) unless category.stories.include?(self)
 end
