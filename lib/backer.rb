@@ -6,5 +6,6 @@ class Backer
   end
 
   def project=(project)
+    @project = project
     category.add_story(self) unless category.stories.include?(self)
 end
